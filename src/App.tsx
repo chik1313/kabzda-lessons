@@ -3,15 +3,18 @@ import './App.css';
 import OnOff from "./components/OnOff/OnOff";
 import Rating, {ValueType} from "./components/Rating/Rating";
 import Accordion from "./components/Accordion/Accordion";
+import UncontrolledOnOff from "./components/UncontrolledOnOff/UncontrolledOnOff";
 
 
 const App = () => {
     let [ratingValue , setRatingValue] = useState<ValueType>(1)
     let [collapsed , setCollapsed] = useState<boolean>(false)
+    const [on , setOn] = useState(true);
 
   return (
   <div className="App">
-      <OnOff />
+      <UncontrolledOnOff/>
+      {/*<OnOff on={on} onClick={setOn}/>*/}
       <Accordion titleValue={"Menu"} collapsed={collapsed} onClick={setCollapsed}/>
       {/*<UncontrolledAccordion titleValue={"Menu"} />*/}
       < Rating value={ratingValue} onClick={setRatingValue}/>
