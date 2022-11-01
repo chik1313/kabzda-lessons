@@ -15,7 +15,7 @@ const App = () => {
   <div className="App">
       <UncontrolledOnOff/>
       {/*<OnOff on={on} onClick={setOn}/>*/}
-      <Accordion titleValue={"Menu"} collapsed={collapsed} onClick={setCollapsed}/>
+      {/*<Accordion titleValue={"Menu"} collapsed={collapsed} onClick={setCollapsed} />*/}
       {/*<UncontrolledAccordion titleValue={"Menu"} />*/}
       < Rating value={ratingValue} onClick={setRatingValue}/>
       {/*<UncontrolledRating />*/}

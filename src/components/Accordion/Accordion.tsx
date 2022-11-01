@@ -44,11 +44,10 @@ type AccordionBodyPropsType = {
 }
 
 const AccordionBody = (props:AccordionBodyPropsType) => {
-    return (
-        <ul>
+    return <ul>
             {props.items.map( (i,index) => <li onClick={()=>{props.onChange(i.value)}} key={index}>{i.title}</li>)}
         </ul>
-    )
+
 }
 export default Accordion;
 
